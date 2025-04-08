@@ -1,0 +1,1 @@
+let welcome = prompt("🎰 Welcome to Lucky 777!\nPick a number between 1 and 36 (whole numbers only).\nWill today be your lucky day?");
