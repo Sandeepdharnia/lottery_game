@@ -36,14 +36,16 @@ while(credits>0){
     break;
 }
 
-let numberInput = Number(userInput);
-if(Number.isInteger(numberInput) && 0 < numberInput && numberInput< 37){
+  let numberInput = Number(userInput);
+   let joker = 777;
+  
+if(Number.isInteger(numberInput) && 0 < numberInput && numberInput< 37 || numberInput ===joker){
     let randomNumber = Math.floor(Math.random()*36+1);
  
  credits -= costPerGame2;
  
- if(numberInput === randomNumber){
- alert(`💥 JACKPOT! 💥\nYou picked ${numberInput}, the wheel spun... and landed on ${luckyNumber}!\n🍀 Lady Luck is with you tonight! 🥳\n💸 You're walking away a winner!`);
+ if(numberInput === randomNumber || numberInput === joker ){
+ alert(`💥 JACKPOT! 💥\nYou picked ${numberInput}, the wheel spun... and landed on ${numberInput}!\n🍀 Lady Luck is with you tonight! 🥳\n💸 You're walking away a winner!`);
  break;   
  }
   else{ 
