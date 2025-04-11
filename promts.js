@@ -28,7 +28,7 @@ let credits = 100;
 let costPerGame2 = 20; 
 
 while(credits>0){
-    let userInput = prompt("🎰 Welcome to Lucky 777!\nPick a number between 1 and 36 (whole numbers only). \nWill today be your lucky day? \n Don't forget you can press 0 at any time to exit.");
+    let userInput = prompt("🎰 Welcome to Lucky 777!\nPick a number between 1 and 36 (whole numbers only). \nWill today be your lucky day? \nCurrent credit: $100 | Each spin costs: $20 💸 \nDon't forget you can press 0 at any time to exit.");
     //to exit
 
     if (userInput === "0"){
